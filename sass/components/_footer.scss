@@ -1,0 +1,115 @@
+/*Footer*/
+.footer {
+    background-color: #2f303a;
+    padding: 60px 0;
+
+&>.container {
+    display: flex;
+    align-items: baseline;
+}
+
+& .logo {
+    color: var(--main-title-color);
+    display: block;
+    margin-bottom: 20px;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+& .logo:hover,
+& .logo:focus {
+    color: var(--accent-color);
+}
+
+&__title {
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    color: var(--main-title-color);
+    font-size: 14px;
+}
+
+&__social-link {
+    display: flex;
+    width: 44px;
+    height: 44px;
+    background-color: var(--main-title-color);
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    color: var(--main-title-color);
+    background-color: rgba(255, 255, 255, 0.1);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+&__social-link:hover,
+&__social-link:focus {
+    color: var(--main-title-color);
+    background-color: var(--accent-color);
+}
+
+&__social-link>.social-link {
+    fill: currentColor;
+}
+
+}
+
+.adress {
+    font-style: normal;
+    color: var(--main-title-color);
+    line-height: 1.71;
+
+& li:not(:first-child) {
+    margin-top: 9px;
+}
+
+& .link {
+    color: rgba(255, 255, 255, 0.6);
+    display: block;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+& .link:hover,
+& .link:focus {
+    color: var(--accent-color);
+}
+}
+
+.container {
+
+&__social {
+    margin-left: 70px;
+}
+
+&__email {
+    margin-left: 93px;
+}
+}
+
+.email {
+
+&__wrap {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+&__form-input {
+    min-width: 358px;
+    height: 50px;
+    padding: 15px 16px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    outline: 2px solid transparent;
+    outline-offset: -2px;
+    transition: outline 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    background-color: transparent;
+}
+
+&__form-input:focus,
+&__form-comment:focus {
+    outline-color: var(--accent-color);
+    color: var(--main-title-color);
+}
+}

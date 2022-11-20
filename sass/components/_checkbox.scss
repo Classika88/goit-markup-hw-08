@@ -1,0 +1,53 @@
+/* Custom checkbox*/
+.register-form {
+&__agreement {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 7px;
+    margin-bottom: 30px;
+}
+
+&__checkbox {
+    appearance: none;
+    width: 16px;
+    height: 15px;
+    border: 2px solid var(--subtitle-color);
+    border-radius: 2px;
+    background-position: center;
+    background-size: 0;
+    background-repeat: no-repeat;
+    transition: background-size 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    cursor: pointer;
+}
+
+&__checkbox:checked {
+    background-color: var(--accent-color);
+    background-size: 16px;
+    background-image: url(../images/icon\ check.svg);
+    border: 2px solid var(--accent-color);
+}
+
+&__desc {
+    line-height: 1.71;
+    color: var(--text-color);
+    user-select: none;
+}
+
+&__link {
+    color: var(--accent-color);
+    margin-left: 4px;
+}
+}
+
+.backdrop.is-hidden .modal {
+    transform: translate(-50%, -50%) scaleY(0);
+}
+
+.is-hidden {
+    visibility: hidden;
+    opacity: 0;
+    pointer-events: none;
+}
+

@@ -1,0 +1,46 @@
+/*Examples*/
+.examples {
+    display: none;
+
+    //Desktop//
+    @media screen and (min-width: 1200px) {
+      display: block;
+      padding-top: 0;
+    }
+    
+
+&__card {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    margin-top: 50px;
+    position: relative;
+    
+}
+
+& .title {
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+    
+}
+
+&__card-label {
+    position: absolute;
+    width: 370px;
+    height: 70px;
+    text-transform: uppercase;
+    background: rgba(47, 48, 58, 0.8);
+    letter-spacing: 0.03em;
+    text-align: center;
+    font-weight: 700;
+    bottom: 0;
+    padding: 27px 0;
+    color: var(--main-title-color);
+}
+}
+
+
+
+
+

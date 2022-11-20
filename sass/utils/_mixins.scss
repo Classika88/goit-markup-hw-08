@@ -1,0 +1,50 @@
+@mixin mq($type) {
+    $mobile: 480px;
+    $tablet: 768px;
+    $desktop: 1200px;
+
+    //mobile from 480 & > infinite
+    @if ($type == mobile) {@media screen and (min-width: $mobile) {
+        @content; }
+    }
+
+    //mobile to 768 & <
+    @if ($type == mobile-only) {
+        @media screen and (max-width: #{$tablet - 0.02}) {
+        @content;
+        }
+    }
+
+    //tablet from 768 & > infinite
+    @if ($type == tablet) {@media screen and (min-width: $tablet) {
+    @content; }
+    }
+    
+    //tablet from 768 to 1200
+    @if ($type == tablet-only) {
+        @media screen and (min-width: $tablet) and (max-width: #{$desktop - 0.02}) {
+        @content;
+        }
+    }
+
+    //desktop from 1200 & > infinite
+    @if ($type == desktop) {@media screen and (min-width: $desktop) {
+    @content; }
+    }
+}
+
+//Card set mixins//
+
+//@mixin grid-item ($items: 1, $indent: 30px) {
+   // flex-basis: calc((100% - $indent * $items) / $items);
+//}
+    
+@mixin grid($indent: 30px) {
+    display: flex;
+    flex-wrap: wrap;
+    gap: $indent;
+}
+
+@mixin grid-item($items: 1, $indent: 30px) {
+    flex-basis: calc((100% - $indent * ($items - 1)) / $items);
+}

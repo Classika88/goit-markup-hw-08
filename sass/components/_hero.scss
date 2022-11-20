@@ -1,0 +1,83 @@
+/*Hero*/
+.hero {
+    background-color: #2f303a;
+    text-align: center;
+    //padding-top: 200px;
+    //padding-bottom: 200px;
+    max-width: 1600px;
+    //max-width: 100%;
+    height: auto;
+    margin: 0 auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: linear-gradient(var(--gradient)),
+    url(../images/background/bg-img_s@1x.jpg);
+
+    @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: url(../images/background/bg-img_s@2x.jpg);}
+    //tablet
+    @media screen and (min-width: 481px) {
+    background-image: url(../images/background/bg-img_m@1x.jpg);
+    @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: url(../images/background/bg-img_m@2x.jpg);}}
+    // desktop 
+    @media screen and (min-width: 769px) {
+    background-image: url(../images/background/bg-img_l@1x.jpg);
+    
+    @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: url(../images/background/bg-img_l@2x.jpg);}}
+    }
+    
+
+& .container {   
+outline: 2px solid red;
+  //outline-offset: -2px;//
+    @include mq(mobile) {
+    padding: 118px 60px;
+    }
+
+         
+    @include mq(tablet) {
+    padding: 118px 204px;
+    }
+
+    @include mq(desktop) {
+    padding: 200px 452px;
+    }
+}
+
+&__title {
+    color: var(--main-title-color);
+    font-weight: 900;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    margin: 0 auto;
+    text-align: center;
+
+    @include mq(mobile) {
+    font-size: 26px;
+    line-height: 1.61;
+    }
+    
+    @include mq(tablet) {
+    font-size: 26px;
+    line-height: 1.61;
+    }
+    
+    @include mq(desktop) {
+    font-size: 44px;
+    line-height: 1.36;
+    }
+
+    //width: 696px;
+    outline: 2px solid red;
+  outline-offset: -2px;
+}
+    

@@ -1,0 +1,26 @@
+//utils styles//
+@import "./utils/mixins";
+@import "./utils/variables";
+@import "./utils/visually-hidden";
+
+//base styles//
+@import "./base/base";
+@import "./base/reset";
+
+//components styles//
+@import "./components/container";
+@import "./components/button";
+@import "./components/header";
+@import "./components/hero";
+@import "./components/benefits";
+@import "./components/examples";
+@import "./components/team";
+@import "./components/customers";
+@import "./components/footer";
+@import "./components/modalw";
+@import "./components/checkbox";
+@import "./components/portfolio";
+@import "./components/mobile-menu-template";
+
+
+
