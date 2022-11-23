@@ -652,3 +652,88 @@
     <script defer src="js/mobile-menu.js"></script>-->
   </body>
 </html>
+<section class="section adv">
+  <div class="container">
+    <h2 class="visually-hidden">Advantages</h2>
+    <ul class="adv__list">
+      <li class="adv__card">
+        <svg class="adv__icon" width="50" height="50">
+          <use href="./images/symbol-defs.svg#icon-icon-cow-desc"></use>
+        </svg>
+        <p class="adv__number">721</p>
+        <p class="adv__text">
+          Aliquam ac dui vel dui vulputate consectetur. Mauris massa.
+        </p>
+      </li>
+      <li>
+        <svg class="adv__icon" width="50" height="50">
+          <use href="./images/symbol-defs.svg#icon-icon-weight-desc"></use>
+        </svg>
+        <p class="adv__number">16kg</p>
+        <p class="adv__text">
+          Aliquam ac dui vel dui vulputate consectetur. Mauris massa.
+        </p>
+      </li>
+      <li>
+        <svg class="adv__icon" width="50" height="50">
+          <use href="./images/symbol-defs.svg#icon-icon-ice-cream-desc"></use>
+        </svg>
+        <p class="adv__number">84</p>
+        <p class="adv__text">
+          Aliquam ac dui vel dui vulputate consectetur. Mauris massa.
+        </p>
+      </li>
+    </ul>
+  </div>
+</section>
+<section class="section about">
+  <div class="container">
+    <p class="about__label">Tradition and love</p>
+    <h2 class="about__title">How it’s made?</h2>
+    <picture>
+      <source
+        srcset="
+          ./images/about/desktop/cowdescx1-min.png 1x,
+          ./images/about/desktop/cowdescx2-min.png 2x
+        "
+        media="(min-width: 1200px)"
+      />
+      <source
+        srcset="
+          ./images/about/tablet/cowtabx1-min.png 1x,
+          ./images/about/tablet/cowtabx2-min.png 2x
+        "
+        media="(min-width: 768px)"
+      />
+      <source
+        srcset="
+          ./images/about/mobile/cowmobx1-min.png 1x,
+          ./images/about/mobile/cowmobx2-min.png 2x
+        "
+        media="(max-width: 767px)"
+      />
+      <img
+        class="about__image"
+        src="./images/about/desktop/cowdescx1-min.png"
+        alt="A cow grazes in the field"
+        width="500"
+        height="529"
+        loading="lazy"
+      />
+    </picture>
+    <p class="about__text">
+      Ice is a place where you will become not only a little happier, but also
+      healthier. Health is the main value for us, and we follow it when creating
+      our handmade desserts. Ice is a place where you will become not only a
+      little happier, but also healthier. Health is the main value for us, and
+      we follow it when creating our handmade desserts.
+    </p>
+    <p class="about__text">
+      We use traditional recipes and 100% natural ingredients. Our products are
+      so natural that they can be given to children from the age of three years.
+      Sweets lovers can expect 55 types of ice cream, 15 types of coffee and 23
+      milkshakes.
+    </p>
+    <button class="about__button" type="button">Read more</button>
+  </div>
+</section>
