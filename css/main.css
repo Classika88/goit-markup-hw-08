@@ -1282,6 +1282,12 @@ img {
   outline-offset: -2px;
 }
 
+.menu-close {
+  background-color: transparent;
+  border: none;
+  margin-left: auto;
+}
+
 /*.menu,
 .menu-btn {
     display: none;

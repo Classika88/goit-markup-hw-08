@@ -56,11 +56,11 @@
             >
           </li>
         </ul>
-        <button type="button" class="menu-btn" data-open-menu>
+        <button type="button" class="menu-open" data-open-menu>
           <svg
             class="header__icon icon"
-            width="44"
-            height="44"
+            width="40"
+            height="40"
             aria-label="Перемикач мобільного меню"
           >
             <use
@@ -70,7 +70,7 @@
           </svg>
         </button>
       </div>
-
+      <!--Кнопка закриття і випадаюче меню-->
       <div class="mob-menu">
         <div class="container">
           <button type="button" class="menu-close">
@@ -128,6 +128,7 @@
           </div>
         </div>
       </div>
+      -->
     </header>
 
     <main>
@@ -529,7 +530,7 @@
       </div>
     </footer>-->
     <!--Modal window-->
-    <!--<div class="backdrop is-hidden" data-modal>
+    <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button type="button" class="close-btn" data-modal-close>
           <svg class="social__icon" width="18" height="18">
@@ -598,7 +599,7 @@
           <button class="register-form__btn" type="submit">Відправити</button>
         </form>
       </div>
-    </div>-->
+    </div>
     <!--modal menu-->
     <!--<div class="menu is-hidden" data-menu>
       <div class="container menu__container">
@@ -610,8 +611,8 @@
       </div>
     </div>-->
 
-    <script src="js/modal.js" type="module"></script>
-    <script src="js/menu.js" type="module"></script>
+    <script src="./js/modal.js" type="module"></script>
+    <script src="./js/menu.js" type="module"></script>
     <!--<div class="menu-container js-menu-container" id="mobile-menu">
       <button class="menu-toggle js-close-menu">
         <svg width="40" height="40">
@@ -652,88 +653,3 @@
     <script defer src="js/mobile-menu.js"></script>-->
   </body>
 </html>
-<section class="section adv">
-  <div class="container">
-    <h2 class="visually-hidden">Advantages</h2>
-    <ul class="adv__list">
-      <li class="adv__card">
-        <svg class="adv__icon" width="50" height="50">
-          <use href="./images/symbol-defs.svg#icon-icon-cow-desc"></use>
-        </svg>
-        <p class="adv__number">721</p>
-        <p class="adv__text">
-          Aliquam ac dui vel dui vulputate consectetur. Mauris massa.
-        </p>
-      </li>
-      <li>
-        <svg class="adv__icon" width="50" height="50">
-          <use href="./images/symbol-defs.svg#icon-icon-weight-desc"></use>
-        </svg>
-        <p class="adv__number">16kg</p>
-        <p class="adv__text">
-          Aliquam ac dui vel dui vulputate consectetur. Mauris massa.
-        </p>
-      </li>
-      <li>
-        <svg class="adv__icon" width="50" height="50">
-          <use href="./images/symbol-defs.svg#icon-icon-ice-cream-desc"></use>
-        </svg>
-        <p class="adv__number">84</p>
-        <p class="adv__text">
-          Aliquam ac dui vel dui vulputate consectetur. Mauris massa.
-        </p>
-      </li>
-    </ul>
-  </div>
-</section>
-<section class="section about">
-  <div class="container">
-    <p class="about__label">Tradition and love</p>
-    <h2 class="about__title">How it’s made?</h2>
-    <picture>
-      <source
-        srcset="
-          ./images/about/desktop/cowdescx1-min.png 1x,
-          ./images/about/desktop/cowdescx2-min.png 2x
-        "
-        media="(min-width: 1200px)"
-      />
-      <source
-        srcset="
-          ./images/about/tablet/cowtabx1-min.png 1x,
-          ./images/about/tablet/cowtabx2-min.png 2x
-        "
-        media="(min-width: 768px)"
-      />
-      <source
-        srcset="
-          ./images/about/mobile/cowmobx1-min.png 1x,
-          ./images/about/mobile/cowmobx2-min.png 2x
-        "
-        media="(max-width: 767px)"
-      />
-      <img
-        class="about__image"
-        src="./images/about/desktop/cowdescx1-min.png"
-        alt="A cow grazes in the field"
-        width="500"
-        height="529"
-        loading="lazy"
-      />
-    </picture>
-    <p class="about__text">
-      Ice is a place where you will become not only a little happier, but also
-      healthier. Health is the main value for us, and we follow it when creating
-      our handmade desserts. Ice is a place where you will become not only a
-      little happier, but also healthier. Health is the main value for us, and
-      we follow it when creating our handmade desserts.
-    </p>
-    <p class="about__text">
-      We use traditional recipes and 100% natural ingredients. Our products are
-      so natural that they can be given to children from the age of three years.
-      Sweets lovers can expect 55 types of ice cream, 15 types of coffee and 23
-      milkshakes.
-    </p>
-    <button class="about__button" type="button">Read more</button>
-  </div>
-</section>
