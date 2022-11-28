@@ -453,7 +453,7 @@ img {
   gap: 50px;
   /*Icons stile*/
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1199.98px) {
   .auth {
     display: block;
     /*gap: 10px;
@@ -481,15 +481,17 @@ img {
     display: none;
   }
 }
-.auth .list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  gap: 30px;
-}
 @media screen and (max-width: 767.98px) {
   .auth .list {
     display: none;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199.98px) {
+  .auth .list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 30px;
   }
 }
 .auth__link {
