@@ -1290,12 +1290,10 @@ img {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  /* justify-content: space-between; */
   overflow-y: scroll;
-  /*outline: 2px solid red;
-    outline-offset: -2px;*/
+  outline: 2px solid red;
+  outline-offset: -2px;
 }
 
 .menu-close {
@@ -1313,7 +1311,6 @@ img {
 }
 
 .menu-nav {
-  margin-top: 48px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1322,6 +1319,7 @@ img {
       -ms-flex-direction: column;
           flex-direction: column;
   gap: 32px;
+  margin-bottom: 302px;
 }
 .menu-nav__current {
   position: relative;
@@ -1340,12 +1338,75 @@ img {
 }
 
 .menu-nav__link {
-  font-family: "Roboto";
   font-weight: 500;
   font-size: 40px;
   line-height: 1, 18;
   letter-spacing: 0.02em;
   color: var(--subtitle-color);
+}
+
+.menu__all-contacts {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.menu-contacts {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 32px;
+  margin-bottom: 64px;
+}
+
+.menu-contacts__item {
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  line-height: 1.17;
+}
+
+.menu-contacts__tel {
+  font-size: 34px;
+  color: var(--accent-color);
+}
+
+.menu-contacts__email {
+  font-size: 24px;
+  color: var(--text-color);
+}
+
+.menu-socials {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: wrap;
+          flex-direction: wrap;
+}
+
+.menu-socials__item {
+  padding: 0 10px;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.22;
+  letter-spacing: 0.02em;
+}
+
+.menu-socials__item:not(:last-child) {
+  border-right: 1px solid rgba(33, 33, 33, 0.2);
+}
+
+.menu-socials__link {
+  color: var(--accent-color);
 }
 
 /*.menu,
