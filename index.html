@@ -206,23 +206,58 @@
 
           <ul class="list examples__card">
             <li>
-              <img src="./images/box1.jpg" alt="Створення сайтів" width="370" />
+              <picture>
+                <source
+                  srcset="
+                    ./images/examples/imgbox_l@1x.jpg 1x,
+                    ./images/examples/imgbox_l@2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <img
+                  src="./images/box1.jpg"
+                  alt="Створення сайтів"
+                  width="370"
+                  loading="lazy"
+                />
+              </picture>
+
               <p class="examples__card-label">Десктопні додатки</p>
             </li>
             <li>
-              <img
-                src="./images/box2.jpg"
-                alt="Розробка мобільних додатків"
-                width="370"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/examples/imgbox2_l@1x.jpg 1x,
+                    ./images/examples/imgbox2_l@2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <img
+                  src="./images/box2.jpg"
+                  alt="Створення сайтів"
+                  width="370"
+                  loading="lazy"
+                />
+              </picture>
               <p class="examples__card-label">Мобільні додатки</p>
             </li>
             <li>
-              <img
-                src="./images/box3.jpg"
-                alt="Розробка дизайну сайтів"
-                width="370"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/examples/imgbox3_l@1x.jpg 1x,
+                    ./images/examples/imgbox3_l@2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <img
+                  src="./images/box3.jpg"
+                  alt="Створення сайтів"
+                  width="370"
+                  loading="lazy"
+                />
+              </picture>
               <p class="examples__card-label">Дизайнерські рішення</p>
             </li>
           </ul>
@@ -235,11 +270,30 @@
           <h2 class="title">Наша команда</h2>
           <ul class="list">
             <li class="team__card">
-              <img
-                src="./images/img.jpg"
-                alt="Фото Ігора Дем'яненко"
-                min-width="270"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/team/img-1_s@1x.jpg 1x,
+                    ./images/team/img-1_s@2x.jpg 2x
+                  "
+                  media="(max-width: 767px)" />
+                <source
+                  srcset="
+                    ./images/team/img_m@1x.jpg 1x,
+                    ./images/team/img_m@2x.jpg 2x
+                  "
+                  media="(min-width: 768px)" />
+                <source
+                  srcset="
+                    ./images/team/img1_l@1x.jpg 1x,
+                    ./images/team/img1_l@2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)" />
+                <img
+                  src="./images/img.jpg"
+                  alt="Фото Ігора Дем'яненко"
+                  min-width="270"
+              /></picture>
               <div class="team__wrapper social__links">
                 <h3 class="name">Ігор Дем'яненко</h3>
                 <p class="text">Product Designer</p>
@@ -276,11 +330,31 @@
               </div>
             </li>
             <li class="team__card">
-              <img
-                src="./images/img2.jpg"
-                alt="Фото Ольги Рєпіної"
-                min-width="270"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/team/img-2_s@1x.jpg 1x,
+                    ./images/team/img-2_s@2x.jpg 2x
+                  "
+                  media="(max-width: 767px)" />
+                <source
+                  srcset="
+                    ./images/team/img2_m@1x.jpg 1x,
+                    ./images/team/img2_m@2x.jpg 2x
+                  "
+                  media="(min-width: 768px)" />
+                <source
+                  srcset="
+                    ./images/team/img2_l@1x.jpg 1x,
+                    ./images/team/img2_l@2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)" />
+
+                <img
+                  src="./images/img2.jpg"
+                  alt="Фото Ольги Рєпіної"
+                  min-width="270"
+              /></picture>
               <div class="team__wrapper">
                 <h3 class="name">Ольга Рєпіна</h3>
                 <p class="text">Frontend Developer</p>
@@ -317,11 +391,30 @@
               </div>
             </li>
             <li class="team__card">
-              <img
-                src="./images/img3.jpg"
-                alt="Фото Миколи Тарасова"
-                min-width="270"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/team/img-3_s@1x.jpg 1x,
+                    ./images/team/img-3_s@2x.jpg 2x
+                  "
+                  media="(max-width: 767px)" />
+                <source
+                  srcset="
+                    ./images/team/img3_m@1x.jpg 1x,
+                    ./images/team/img3_m@2x.jpg 2x
+                  "
+                  media="(min-width: 768px)" />
+                <source
+                  srcset="
+                    ./images/team/img3_l@1x.jpg 1x,
+                    ./images/team/img3_l@2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)" />
+                <img
+                  src="./images/img3.jpg"
+                  alt="Фото Миколи Тарасова"
+                  min-width="270"
+              /></picture>
               <div class="team__wrapper">
                 <h3 class="name">Микола Тарасов</h3>
                 <p class="text">Marketing</p>
@@ -358,11 +451,30 @@
               </div>
             </li>
             <li class="team__card">
-              <img
-                src="./images/img4.jpg"
-                alt="Фото Михайла Єрмакова"
-                min-width="270"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/team/img-4_s@1x.jpg 1x,
+                    ./images/team/img-4_s@2x.jpg 2x
+                  "
+                  media="(max-width: 767px)" />
+                <source
+                  srcset="
+                    ./images/team/img4_m@1x.jpg 1x,
+                    ./images/team/img4_m@2x.jpg 2x
+                  "
+                  media="(min-width: 768px)" />
+                <source
+                  srcset="
+                    ./images/team/img4_l@1x.jpg 1x,
+                    ./images/team/img4_l@2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)" />
+                <img
+                  src="./images/img4.jpg"
+                  alt="Фото Михайла Єрмакова"
+                  min-width="270"
+              /></picture>
               <div class="team__wrapper">
                 <h3 class="name">Михайло Єрмаков</h3>
                 <p class="text">UI Designer</p>
